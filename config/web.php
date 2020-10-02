@@ -43,14 +43,20 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+        
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'enableStrictParsing' => false,
             'rules' => [
+                'article/edit/<id:\d+>' => 'article/edit',
+                'article/delete/<id:\d+>' => 'article/delete',
+                'article/publish/<id:\d+>' => 'article/publish',
+                'article/unpublish/<id:\d+>' => 'article/unpublish',
+
             ],
         ],
-        */
+        
     ],
     'params' => $params,
 ];

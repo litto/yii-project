@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3308
--- Generation Time: Oct 01, 2020 at 12:50 PM
+-- Generation Time: Oct 02, 2020 at 07:06 PM
 -- Server version: 8.0.18
 -- PHP Version: 7.3.12
 
@@ -42,17 +42,18 @@ CREATE TABLE IF NOT EXISTS `article` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `slug` (`slug`),
   KEY `user_key` (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `article`
 --
 
 INSERT INTO `article` (`id`, `user_id`, `title`, `slug`, `body`, `image`, `published`, `created`, `modified`) VALUES
-(1, 1, 'Dubai Article', 'first-post', '<p>This is the first post.s</p>\r\n<p>s</p>', 'category_5ec1f88d746267-15703624-47861638.jpg', 1, '2020-09-26 18:47:35', '2020-10-01 07:35:44'),
-(3, 1, 'Rajeee 23455', 'Raj', '<p>Rajs</p>\r\n<p>s</p>\r\n<p>s</p>', 'category_5ec220815cb486-71292690-72585004.jpg', 1, '2020-09-26 15:53:34', '2020-10-01 08:09:24'),
-(5, 1, 'Testing system', 'Testing-system', '<p>testtt</p>', 'category_5ec1f73e8b93c1-78216411-78234014.jpg', 1, '2020-10-01 06:52:53', '2020-10-01 08:09:46'),
-(6, 1, 'Mutual Testing', 'Mutual-Testing', '<p>Mutual Testing</p>', 'category_5ec1f73e8b93c1-78216411-78234014.jpg', 1, '2020-10-01 06:53:46', '2020-10-01 08:10:28');
+(1, 1, 'Dubai Article1', 'Dubai Article1', '<p>This is the first post.s</p>\r\n<p>s</p>', '-eHQsk1X8D2sZoRiuMXa1Kv0p1-bNIMV.jpeg', 1, '2020-09-26 18:47:35', '2020-10-02 18:57:41'),
+(6, 1, 'Mutual Testing', 'Mutual-Testing', '<p>Mutual Testing</p>', 'category_5ec1f73e8b93c1-78216411-78234014.jpg', 1, '2020-10-01 06:53:46', '2020-10-01 08:10:28'),
+(7, 1, 'yii test', 'yii test', '<p>yiii</p>', 'demo.jpg', 1, '0000-00-00 00:00:00', NULL),
+(8, 1, 'testt', 'testt', '<p>test</p>', 'alLJpwZaMUETKwqdkHEMLt_J8nPMHWIP.png', 1, '0000-00-00 00:00:00', NULL),
+(9, 1, 'jaciioo', 'jaciioo', '<p>testt</p>', 'HRYlT45cFSS7ecbBcYCe2lfZE05yTAMh.jpg', 1, '2020-10-02 18:12:35', NULL);
 
 -- --------------------------------------------------------
 
