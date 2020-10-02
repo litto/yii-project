@@ -31,3 +31,4 @@ Article Creation, Updation, Deletion
 File Uploading Option and Management
 
 This is a sample project for helping beginners, which you can use as a skelton for developing your project
+<img src="yii.jpg"/>
